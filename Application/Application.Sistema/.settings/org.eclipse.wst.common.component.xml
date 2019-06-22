@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Application.Sistema">
+        <wb-resource deploy-path="/" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/" source-path="/src/main/resources"/>
+        <dependent-module archiveName="Infrastructure.CrossCutting-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Infrastructure.CrossCutting/Infrastructure.CrossCutting">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Application.SeedWork-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Application.SeedWork/Application.SeedWork">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Application.Dto-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Application.Dto/Application.Dto">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Domain.Sistema-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Domain.Sistema/Domain.Sistema">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Domain.SeedWork-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Domain.SeedWork/Domain.SeedWork">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Infrastructure.Data.Sistema-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Infrastructure.Data.Sistema/Infrastructure.Data.Sistema">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Infrastructure.Data.SeedWork-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Infrastructure.Data.SeedWork/Infrastructure.Data.SeedWork">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

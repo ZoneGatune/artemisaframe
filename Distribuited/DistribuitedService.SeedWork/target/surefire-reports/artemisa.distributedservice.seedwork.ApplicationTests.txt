@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: artemisa.distributedservice.seedwork.ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.865 s - in artemisa.distributedservice.seedwork.ApplicationTests

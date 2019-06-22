@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Implementation-Title: Application.Sistema
+Implementation-Version: 0.0.1
+Class-Path: lib/spring-boot-starter-web-2.1.5.RELEASE.jar lib/spring-b
+ oot-starter-2.1.5.RELEASE.jar lib/spring-boot-2.1.5.RELEASE.jar lib/s
+ pring-boot-autoconfigure-2.1.5.RELEASE.jar lib/spring-boot-starter-lo
+ gging-2.1.5.RELEASE.jar lib/logback-classic-1.2.3.jar lib/logback-cor
+ e-1.2.3.jar lib/log4j-to-slf4j-2.11.2.jar lib/log4j-api-2.11.2.jar li
+ b/jul-to-slf4j-1.7.26.jar lib/snakeyaml-1.23.jar lib/spring-boot-star
+ ter-json-2.1.5.RELEASE.jar lib/jackson-databind-2.9.8.jar lib/jackson
+ -annotations-2.9.0.jar lib/jackson-core-2.9.8.jar lib/jackson-datatyp
+ e-jdk8-2.9.8.jar lib/jackson-datatype-jsr310-2.9.8.jar lib/jackson-mo
+ dule-parameter-names-2.9.8.jar lib/hibernate-validator-6.0.16.Final.j
+ ar lib/validation-api-2.0.1.Final.jar lib/jboss-logging-3.3.2.Final.j
+ ar lib/classmate-1.4.0.jar lib/spring-web-5.1.7.RELEASE.jar lib/sprin
+ g-beans-5.1.7.RELEASE.jar lib/spring-webmvc-5.1.7.RELEASE.jar lib/spr
+ ing-aop-5.1.7.RELEASE.jar lib/spring-context-5.1.7.RELEASE.jar lib/sp
+ ring-expression-5.1.7.RELEASE.jar lib/javax.annotation-api-1.3.2.jar 
+ lib/groovy-all-2.4.12.jar lib/lombok-1.18.8.jar lib/slf4j-api-1.7.26.
+ jar lib/byte-buddy-1.9.12.jar lib/spring-core-5.1.7.RELEASE.jar lib/s
+ pring-jcl-5.1.7.RELEASE.jar lib/Infrastructure.CrossCutting-0.0.1.jar
+  lib/Application.SeedWork-0.0.1.jar lib/Application.Dto-0.0.1.jar lib
+ /Domain.Sistema-0.0.1.jar lib/Domain.SeedWork-0.0.1.jar lib/Infrastru
+ cture.Data.Sistema-0.0.1.jar lib/spring-boot-starter-jdbc-2.1.5.RELEA
+ SE.jar lib/HikariCP-3.2.0.jar lib/spring-jdbc-5.1.7.RELEASE.jar lib/s
+ pring-tx-5.1.7.RELEASE.jar lib/Infrastructure.Data.SeedWork-0.0.1.jar
+  lib/postgresql-42.2.5.jar lib/spring-boot-starter-data-jpa-2.1.5.REL
+ EASE.jar lib/spring-boot-starter-aop-2.1.5.RELEASE.jar lib/aspectjwea
+ ver-1.9.4.jar lib/javax.transaction-api-1.3.jar lib/jaxb-api-2.3.1.ja
+ r lib/spring-data-jpa-2.1.8.RELEASE.jar lib/spring-data-commons-2.1.8
+ .RELEASE.jar lib/spring-orm-5.1.7.RELEASE.jar lib/spring-aspects-5.1.
+ 7.RELEASE.jar lib/hibernate-core-5.3.10.Final.jar lib/javax.persisten
+ ce-api-2.2.jar lib/javassist-3.23.2-GA.jar lib/antlr-2.7.7.jar lib/jb
+ oss-transaction-api_1.2_spec-1.1.1.Final.jar lib/jandex-2.0.5.Final.j
+ ar lib/javax.activation-api-1.2.0.jar lib/dom4j-2.1.1.jar lib/hiberna
+ te-commons-annotations-5.0.4.Final.jar lib/hibernate-entitymanager-5.
+ 3.10.Final.jar lib/h2-1.4.199.jar
+Build-Jdk-Spec: 1.8
+Created-By: Maven Integration for Eclipse
+Main-Class: theMainClass
+
