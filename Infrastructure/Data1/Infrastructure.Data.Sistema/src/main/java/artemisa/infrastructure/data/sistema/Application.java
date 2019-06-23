@@ -9,6 +9,12 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages={
+		"artemisa.domain.sistema","artemisa.infrastructure.crosscutting",
+		"artemisa.infrastructure.data.seedwork"
+		})
+
+@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
 public class Application {
 
 	public static void main(String[] args) {

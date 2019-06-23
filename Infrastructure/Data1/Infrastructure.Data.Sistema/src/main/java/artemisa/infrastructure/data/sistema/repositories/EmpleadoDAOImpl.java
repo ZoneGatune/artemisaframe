@@ -24,9 +24,13 @@ import artemisa.domain.sistema.irepositories.EmpleadoDAO;
 @Repository
 public class EmpleadoDAOImpl implements EmpleadoDAO {
 
-	@Qualifier("jdbcAcceso")
 	@Autowired
+	@Qualifier("jdbcAcceso")	
 	JdbcTemplate jdbcTemplate;
+	
+	/*@Autowired
+	@Qualifier("objDependency")	
+	String holaMundo;*/
 
 	@Override
 	public Empleado obtenerEmpleadoPorNombreRed(String nombre_trabajador) {
@@ -52,6 +56,7 @@ public class EmpleadoDAOImpl implements EmpleadoDAO {
 			empleado.setPais(pais);
 		}
 		return empleado;
+		//return null;
 	}
 
 	@Override

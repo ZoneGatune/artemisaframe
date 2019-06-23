@@ -40,6 +40,7 @@ public class PoliticaDAOImpl implements PoliticaDAO {
 		} catch (EmptyResultDataAccessException e) {
 			return null;
 		}
+		//return null;
 	}
 
 	@Override
@@ -53,7 +54,7 @@ public class PoliticaDAOImpl implements PoliticaDAO {
 		} catch (EmptyResultDataAccessException e) {
 			return null;
 		}
-
+		//return null;
 	}
 
 }

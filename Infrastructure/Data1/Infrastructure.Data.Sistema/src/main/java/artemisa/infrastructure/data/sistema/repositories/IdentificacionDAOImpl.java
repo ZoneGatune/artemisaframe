@@ -25,8 +25,8 @@ import artemisa.infrastructure.data.sistema.mapper.IdentificacionRowMapper;
 @Repository
 public class IdentificacionDAOImpl implements IdentificacionDAO {
 
-	@Qualifier("jdbcDayr")
 	@Autowired
+	@Qualifier("jdbcDayr")
 	JdbcTemplate jdbcTemplate;
 
 	@Override
@@ -35,7 +35,7 @@ public class IdentificacionDAOImpl implements IdentificacionDAO {
 				identificacion.getEmpresa().getCodigo(), identificacion.getPuntoVenta().getCodigo(), identificacion.getAlmacen().getCodigo(), identificacion.getPuerto(),
 				identificacion.getPeriodoTrabajo(), identificacion.getPais().getCodigo(), identificacion.getFechaActualizacion(), identificacion.getHoraActualizacion(),
 				identificacion.getUsuarioActualizacion(), identificacion.getIndicadorActivo(), identificacion.getSubSistema().getCodigo(), identificacion.getPeriodoContable());
-
+		
 	}
 
 	@Override
@@ -50,6 +50,7 @@ public class IdentificacionDAOImpl implements IdentificacionDAO {
 		} catch (EmptyResultDataAccessException e) {
 			return null;
 		}
+		//return null;
 	}
 
 	@Override
@@ -61,7 +62,7 @@ public class IdentificacionDAOImpl implements IdentificacionDAO {
 			codigo = (Integer) out.get("codigo");
 		}
 		return codigo;
-
+		//return 0;
 	}
 
 	@Override
@@ -75,6 +76,7 @@ public class IdentificacionDAOImpl implements IdentificacionDAO {
 		} catch (EmptyResultDataAccessException e) {
 			return null;
 		}
+		//return null;
 	}
 	
 

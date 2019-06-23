@@ -48,6 +48,11 @@ public class CabeceraSalidaDTO implements Serializable {
 	public void setListaErrores(List<MensajeError> listaErrores) {
 		this.listaErrores = listaErrores;
 	}
+	@Override
+	public String toString() {
+		return "CabeceraSalidaDTO [codigoRespuesta=" + codigoRespuesta + ", mensajeRespuesta=" + mensajeRespuesta
+				+ ", idTransaccion=" + idTransaccion + ", listaErrores=" + listaErrores + "]";
+	}
 	
 	
 	

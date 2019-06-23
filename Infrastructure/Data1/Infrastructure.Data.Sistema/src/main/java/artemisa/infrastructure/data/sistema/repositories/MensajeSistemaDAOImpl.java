@@ -40,6 +40,7 @@ public class MensajeSistemaDAOImpl implements MensajeSistemaDAO {
 		} catch (EmptyResultDataAccessException e) {
 			return null;
 		}
+		//return null;
 	}
 
 	/*
@@ -60,6 +61,7 @@ public class MensajeSistemaDAOImpl implements MensajeSistemaDAO {
 		} catch (EmptyResultDataAccessException e) {
 			return null;
 		}
+		//return null;
 	}
 
 }

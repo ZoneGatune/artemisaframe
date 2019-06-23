@@ -31,15 +31,15 @@ public class ConfigDBFactory {
 	
 	@Primary
 	@Bean(name="dsAcceso")
-	@ConfigurationProperties(prefix="spring.datasource.acceso")
+	//@ConfigurationProperties(prefix="spring.datasource-acceso")
 	public DataSource dsAcceso() {
-		/*DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
+		DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
         dataSourceBuilder.driverClassName("org.postgresql.Driver");
         dataSourceBuilder.url("jdbc:postgresql://142.44.210.9:5432/bd_acceso?autoReconnect=true&useSSL=false");
         dataSourceBuilder.username("segAcceso");
         dataSourceBuilder.password("artemisa");
-        return dataSourceBuilder.build();*/
-		return DataSourceBuilder.create().build();
+        return dataSourceBuilder.build();
+		//return DataSourceBuilder.create().build();
 	}
 	
 	
@@ -51,15 +51,15 @@ public class ConfigDBFactory {
 	}*/
 	
 	@Bean(name="dsDayr")
-    @ConfigurationProperties(prefix="spring.datasource.dayr")
+    //@ConfigurationProperties(prefix="spring.datasource-dayr")
     public DataSource dsDayr() {
-		/*DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
+		DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
         dataSourceBuilder.driverClassName("org.postgresql.Driver");
         dataSourceBuilder.url("jdbc:postgresql://142.44.210.9:5432/bd_dayr?autoReconnect=true&useSSL=false");
         dataSourceBuilder.username("userTransaccion");
         dataSourceBuilder.password("artemisa");
-        return dataSourceBuilder.build();*/
-        return DataSourceBuilder.create().build();
+        return dataSourceBuilder.build();
+        //return DataSourceBuilder.create().build();
     }
 
 	@Bean(name="jdbcAcceso")
@@ -72,9 +72,9 @@ public class ConfigDBFactory {
 		return new JdbcTemplate(dsDayr);
 	}
 	
-	@Bean(name="objDependency")
+	/*@Bean(name="objDependency")
 	public String holaMundo() {
 		return "holaMundoJava";
-	}
+	}*/
 	
 }

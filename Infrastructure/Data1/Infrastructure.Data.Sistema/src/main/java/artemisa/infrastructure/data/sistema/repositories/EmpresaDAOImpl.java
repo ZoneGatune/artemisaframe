@@ -22,8 +22,8 @@ import artemisa.domain.sistema.irepositories.EmpresaDAO;
 @Repository
 public class EmpresaDAOImpl implements EmpresaDAO {
 
-	@Qualifier("jdbcAcceso")
 	@Autowired
+	@Qualifier("jdbcAcceso")	
 	JdbcTemplate jdbcTemplate;
 
 	public Empresa obtenerEmpresa(int codigo) {
@@ -42,6 +42,7 @@ public class EmpresaDAOImpl implements EmpresaDAO {
 			
 		}
 		return empresa;
+		//return null;
 	}
 
 }

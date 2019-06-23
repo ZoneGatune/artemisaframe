@@ -35,6 +35,14 @@ public class RespuestaDTO implements Serializable {
 	public void setDatos(Object datos) {
 		this.datos = datos;
 	}
+
+	@Override
+	public String toString() {
+		return "RespuestaDTO [respuesta=" + respuesta + ", datos=" + datos + "]";
+	}
+
+	
+	
 	
 	
 	

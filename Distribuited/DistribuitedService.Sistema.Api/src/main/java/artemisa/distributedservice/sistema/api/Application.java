@@ -23,6 +23,7 @@ public class Application extends SpringBootServletInitializer{
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
+		//new SpringApplicationBuilder(artemisa.application.sistema.Application.class).run(args);
 	}
 	
 	@Override

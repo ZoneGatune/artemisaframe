@@ -120,6 +120,14 @@ public class IdentificacionDTO implements Serializable {
 	public void setImagenLogoArtemisa(String imagenLogoArtemisa) {
 		this.imagenLogoArtemisa = imagenLogoArtemisa;
 	}
+	@Override
+	public String toString() {
+		return "IdentificacionDTO [codigo=" + codigo + ", codigoA=" + codigoA + ", pais=" + pais + ", empresa="
+				+ empresa + ", almacen=" + almacen + ", puntoVenta=" + puntoVenta + ", empleado=" + empleado
+				+ ", puerto=" + puerto + ", subSistema=" + subSistema + ", periodoContable=" + periodoContable
+				+ ", periodoTrabajo=" + periodoTrabajo + ", nombreBd=" + nombreBd + ", imagenLogoEmpresa="
+				+ imagenLogoEmpresa + ", imagenPais=" + imagenPais + ", imagenLogoArtemisa=" + imagenLogoArtemisa + "]";
+	}
 	
 	
 
