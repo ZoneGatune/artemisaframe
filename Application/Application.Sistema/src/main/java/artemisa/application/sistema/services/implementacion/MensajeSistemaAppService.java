@@ -94,7 +94,7 @@ public class MensajeSistemaAppService implements IMensajeSistemaAppService {
 			MensajeSistema mensajeSistema = Funciones.obtenerMensajeSistema(listaMensajesSistema, validacion);
 			if (mensajeSistema == null || mensajeSistema.getIndicadorActivo() == Constantes.INDICADOR_INACTIVO) {
 				error = new MensajeError();
-				error.setCodigoError(mensajeSistema19.getCodigoA());
+				error.setCodigoError(mensajeSistema19.getCodigoMensaje());
 				error.setMensajeError(mensajeSistema19.getMensaje().replace(Constantes.CODIGO_MSG001, Constantes.ENTIDAD_MENSAJE_SISTEMA + ": " + validacion));
 				listaErrores.add(error);
 			}

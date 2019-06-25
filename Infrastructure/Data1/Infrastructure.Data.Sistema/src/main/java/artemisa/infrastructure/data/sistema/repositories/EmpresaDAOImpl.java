@@ -29,12 +29,13 @@ public class EmpresaDAOImpl implements EmpresaDAO {
 	public Empresa obtenerEmpresa(int codigo) {
 		SimpleJdbcCall jdbcCall = new SimpleJdbcCall(jdbcTemplate).withFunctionName("UDF_GetOrganizationByID").withSchemaName("acceso");
 		MapSqlParameterSource in = new MapSqlParameterSource();
-		in.addValue("codigo", codigo);
+		in.addValue("codigo_empresa", codigo);
 		Map<String, Object> out = jdbcCall.execute(in);
 		Empresa empresa = null;
 		if (out.size() > 0) {
 			empresa = new Empresa();
 			empresa.setCodigo((Integer) out.get("codigo"));
+			empresa.setCodigoA((String) out.get("codigo_a"));
 			empresa.setIndicadorActivo( (Integer)  out.get("ind_activo"));
 			empresa.setNombreBD((String) out.get("nombre_bd"));
 			empresa.setImagenLogo((String) out.get("imagen_logo"));

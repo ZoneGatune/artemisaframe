@@ -22,6 +22,8 @@ public class IdentificacionDTO implements Serializable {
 	private int almacen;
 	private int puntoVenta;
 	private int empleado;
+	private int codigoEmpleado;
+	private String nombreEmpleado;
 	private String puerto;
 	private int subSistema;
 	private String periodoContable;
@@ -30,6 +32,8 @@ public class IdentificacionDTO implements Serializable {
 	private String imagenLogoEmpresa;
 	private String imagenPais;
 	private String imagenLogoArtemisa;
+	private int usuario;
+	private int entidad;
 	public int getCodigo() {
 		return codigo;
 	}
@@ -120,15 +124,40 @@ public class IdentificacionDTO implements Serializable {
 	public void setImagenLogoArtemisa(String imagenLogoArtemisa) {
 		this.imagenLogoArtemisa = imagenLogoArtemisa;
 	}
+	public int getCodigoEmpleado() {
+		return codigoEmpleado;
+	}
+	public void setCodigoEmpleado(int codigoEmpleado) {
+		this.codigoEmpleado = codigoEmpleado;
+	}
+	public String getNombreEmpleado() {
+		return nombreEmpleado;
+	}
+	public void setNombreEmpleado(String nombreEmpleado) {
+		this.nombreEmpleado = nombreEmpleado;
+	}
+	public int getUsuario() {
+		return usuario;
+	}
+	public void setUsuario(int usuario) {
+		this.usuario = usuario;
+	}
+	public int getEntidad() {
+		return entidad;
+	}
+	public void setEntidad(int entidad) {
+		this.entidad = entidad;
+	}
 	@Override
 	public String toString() {
 		return "IdentificacionDTO [codigo=" + codigo + ", codigoA=" + codigoA + ", pais=" + pais + ", empresa="
 				+ empresa + ", almacen=" + almacen + ", puntoVenta=" + puntoVenta + ", empleado=" + empleado
-				+ ", puerto=" + puerto + ", subSistema=" + subSistema + ", periodoContable=" + periodoContable
-				+ ", periodoTrabajo=" + periodoTrabajo + ", nombreBd=" + nombreBd + ", imagenLogoEmpresa="
-				+ imagenLogoEmpresa + ", imagenPais=" + imagenPais + ", imagenLogoArtemisa=" + imagenLogoArtemisa + "]";
+				+ ", codigoEmpleado=" + codigoEmpleado + ", nombreEmpleado=" + nombreEmpleado + ", puerto=" + puerto
+				+ ", subSistema=" + subSistema + ", periodoContable=" + periodoContable + ", periodoTrabajo="
+				+ periodoTrabajo + ", nombreBd=" + nombreBd + ", imagenLogoEmpresa=" + imagenLogoEmpresa
+				+ ", imagenPais=" + imagenPais + ", imagenLogoArtemisa=" + imagenLogoArtemisa + ", usuario=" + usuario
+				+ ", entidad=" + entidad + "]";
 	}
-	
-	
+
 
 }

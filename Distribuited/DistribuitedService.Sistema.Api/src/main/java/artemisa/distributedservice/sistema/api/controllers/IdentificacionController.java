@@ -31,13 +31,13 @@ public class IdentificacionController {
 	@RequestMapping(value = "/obtenerIdentificacion", method = RequestMethod.POST,headers="Accept=application/json")
 	@ResponseBody
 	public RespuestaDTO obtenerIdentificacion(@RequestBody MensajeEntradaDTO mensajeEntrada) {
-		System.out.println("lucas");
+		//System.out.println("lucas");
 		RespuestaDTO result = iIdentificacionAppService.obtenerIdentificacion(mensajeEntrada); 
-		System.out.println(result.toString());
-		System.out.println(result.getDatos().toString());
-		IdentificacionSalidaDTO result_n = (IdentificacionSalidaDTO) result.getDatos();
-		System.out.println(result_n.getIdentificacionBO().toString());
-		System.out.println(result.getRespuesta().toString());
+		//System.out.println(result.toString());
+		//System.out.println(result.getDatos().toString());
+		//IdentificacionSalidaDTO result_n = (IdentificacionSalidaDTO) result.getDatos();
+		//System.out.println(result_n.getIdentificacionBO().toString());
+		//System.out.println(result.getRespuesta().toString());
 		return result;
 	}
 

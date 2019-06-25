@@ -26,6 +26,8 @@ public class Constantes {
 	public static final String VALOR_VACIO		="";
 	
 	public static final String CODIGO_MSG001		= "{MSJ001}";
+	public static final String CODIGO_MSG002		= "{SERVIDOR}";
+	public static final String CODIGO_MSG003		= "{EMPRESA}";
 	
 	//Constantes Entidad
 	public static final String ENTIDAD_EMPRESA 				= "EMPRESA";
@@ -36,6 +38,7 @@ public class Constantes {
 	public static final String ENTIDAD_SUB_SISTEMA			= "SUB_SISTEMA";
 	public static final String ENTIDAD_IDENTIFICACION		= "IDENTIFICACION";
 	public static final String ENTIDAD_EMPLEADO_GRUPO		= "EMPLEADO_GRUPO";
+	public static final String ENTIDAD_PARAMETRO			= "PARAMETRO";
 	
 	//Constantes Entidad
 	public static final String TAMANHO_EMPRESA 				= "5";
