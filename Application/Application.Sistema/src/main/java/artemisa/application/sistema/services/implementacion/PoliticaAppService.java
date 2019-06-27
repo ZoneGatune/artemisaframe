@@ -106,9 +106,10 @@ public class PoliticaAppService implements IPoliticaAppService {
 						.add(new MensajeError(mensajeSistemaActivo.getCodigoMensaje(), mensajeSistemaActivo.getMensaje().replace(Constantes.CODIGO_MSG001, Constantes.ENTIDAD_POLITICA + ": " + validacion)));
 			} else {
 				if (politica.getValor01().isEmpty()) {
-
-					listaErrores.add(new MensajeError(mensajeSistemaObligatorio.getCodigoMensaje(),
-							mensajeSistemaObligatorio.getMensaje().replace(Constantes.CODIGO_MSG001, Constantes.ENTIDAD_POLITICA + ": " + validacion +".VALOR_01")));
+					if(politica.getTipoPolitica().getCodigo() == Constantes.INDICADOR_INACTIVO) {
+						listaErrores.add(new MensajeError(mensajeSistemaObligatorio.getCodigoMensaje(),
+								mensajeSistemaObligatorio.getMensaje().replace(Constantes.CODIGO_MSG001, Constantes.ENTIDAD_POLITICA + ": " + validacion +". VALOR_01")));
+					}					
 				}
 			}
 		}
